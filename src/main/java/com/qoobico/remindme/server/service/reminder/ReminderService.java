@@ -1,4 +1,4 @@
-package com.qoobico.remindme.server.service;
+package com.qoobico.remindme.server.service.reminder;
 
 import com.qoobico.remindme.server.entity.Remind;
 

@@ -1,7 +1,7 @@
 package com.qoobico.remindme.server.controller;
 
 import com.qoobico.remindme.server.entity.Remind;
-import com.qoobico.remindme.server.service.ReminderService;
+import com.qoobico.remindme.server.service.reminder.ReminderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +27,7 @@ public class ReminderController {
 
     @RequestMapping(value = "/reminders", method = RequestMethod.POST)
     @ResponseBody
-    public Remind saveRemider(@RequestBody Remind remind) {
+    public Remind saveReminder(@RequestBody Remind remind) {
         return service.save(remind);
     }
 
